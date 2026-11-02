@@ -1,0 +1,13 @@
+{
+  "posts": [
+    {
+      "title": "Welcome to the blog",
+      "slug": "welcome",
+      "date": "2026-11-02",
+      "excerpt": "A quieter life, not a smaller one. Here's what you'll find here.",
+      "image": "",
+      "body": "Hi, I'm Mariah! This is where I'll share the simple routines, UGC tips and real-life notes that help me build something of my own while keeping family first.\n\n## What you'll find here\n\n- Easy routines for a calmer home\n- Behind the scenes of UGC work\n- Honest notes on working from home with two boys\n\nThanks for being here.",
+      "show": true
+    }
+  ]
+}

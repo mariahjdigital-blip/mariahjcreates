@@ -1,0 +1,14 @@
+{
+  "headline": "Warm, real-life content that feels like a friend's recommendation",
+  "intro": "I'm Mariah, a former corporate marketer turned UGC creator and boy mom. I create scroll-stopping Reels and lifestyle photos for brands that fit into busy family life.",
+  "services": [
+    { "title": "UGC Videos", "description": "Short-form videos for ads and organic content: hooks, voiceovers and real-life B-roll." },
+    { "title": "Lifestyle Photos", "description": "Natural, light-filled product photos styled in a real family home." },
+    { "title": "Instagram Collabs", "description": "Reels posted to @_createdbymj for gifted and paid partnerships." }
+  ],
+  "projects": [
+    { "brand": "Genuine Tea", "type": "UGC Reel", "description": "Placeholder: a sentence about the concept and result.", "video": "", "image": "", "link": "" },
+    { "brand": "Chilly Moose", "type": "UGC Reel", "description": "Placeholder: a sentence about the concept and result.", "video": "", "image": "", "link": "" },
+    { "brand": "Sweat and Shiver", "type": "UGC Reel", "description": "Placeholder: a sentence about the concept and result.", "video": "", "image": "", "link": "" }
+  ]
+}

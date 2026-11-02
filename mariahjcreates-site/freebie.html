@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Resource | Mariah J Creates</title>
+  <meta name="description" content="UGC creator and boy mom helping women build a quieter life, not a smaller one.">
+  <meta property="og:title" content="Free Resource | Mariah J Creates">
+  <meta property="og:description" content="UGC creator and boy mom helping women build a quieter life, not a smaller one.">
+  <meta property="og:image" content="https://mariahjcreates.com/images/mariah-full.jpg">
+  <link rel="icon" href="/images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body data-page="freebie" class="bg-cream text-ink font-sans min-h-screen flex flex-col">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-espresso-mist opacity-70 blur-3xl"></div>
+    <div class="absolute bottom-0 -left-24 w-80 h-80 rounded-full bg-linen opacity-80 blur-3xl"></div>
+  </div>
+  <header id="site-header" class="relative"></header>
+  <main id="freebie" class="relative mx-auto w-full max-w-5xl px-5 py-10 fade">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div id="f-image" class="aspect-[4/5] rounded-3xl overflow-hidden bg-espresso-mist flex items-center justify-center text-espresso text-6xl"><i class="fa-solid fa-gift"></i></div>
+      <div>
+        <span class="text-[10px] uppercase tracking-widest font-medium rounded-full bg-espresso text-cream px-2 py-0.5">Free</span>
+        <h1 id="f-title" class="mt-4 font-serif text-4xl md:text-5xl font-semibold leading-tight"></h1>
+        <p id="f-subtitle" class="mt-2 text-espresso font-medium"></p>
+        <p id="f-description" class="mt-5 text-muted leading-relaxed"></p>
+        <ul id="f-bullets" class="mt-6 space-y-3 text-sm"></ul>
+        <form id="signup" name="freebie-signup" method="POST" data-netlify="true" netlify-honeypot="company" class="mt-8 rounded-2xl border border-sand bg-white/70 p-5 space-y-3">
+          <input type="hidden" name="form-name" value="freebie-signup">
+          <input type="hidden" name="freebie" value="">
+          <p class="hidden"><label>Company <input name="company"></label></p>
+          <label class="block text-sm"><span class="sr-only">First name</span><input name="first_name" required placeholder="First name" class="field"></label>
+          <label class="block text-sm"><span class="sr-only">Email</span><input name="email" type="email" required placeholder="Email address" class="field"></label>
+          <button type="submit" class="btn-primary w-full rounded-full px-6 py-3 text-sm font-medium">Send it to me</button>
+          <p class="text-[11px] text-muted text-center">You'll also get my emails. Unsubscribe anytime.</p>
+        </form>
+        <div id="thanks" class="hidden mt-8 rounded-2xl bg-espresso-mist p-6">
+          <p class="font-serif text-2xl font-semibold">You're in!</p>
+          <p class="mt-2 text-sm text-muted">Thanks for signing up. Your freebie is on its way.</p>
+          <a id="download" hidden href="#" target="_blank" rel="noopener" class="btn-primary mt-4 inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium"><i class="fa-solid fa-download"></i> Download now</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="site-footer" class="mt-auto border-t border-sand/70"></footer>
+  <script src="/assets/site.js"></script>
+</body>
+</html>
