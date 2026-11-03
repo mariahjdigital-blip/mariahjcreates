@@ -1,373 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Mariah Johnston (MJ) | UGC Creator for Family &amp; Home Brands</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          paper:  'rgb(var(--paper) / <alpha-value>)',
-          shell:  'rgb(var(--shell) / <alpha-value>)',
-          ink:    'rgb(var(--ink) / <alpha-value>)',
-          slate2: 'rgb(var(--slate2) / <alpha-value>)',
-          oat:    'rgb(var(--oat) / <alpha-value>)',
-          walnut: 'rgb(var(--walnut) / <alpha-value>)',
-          line:   'rgb(var(--line) / <alpha-value>)'
-        },
-        fontFamily: {
-          display: ['"Instrument Serif"', 'Georgia', '"Times New Roman"', 'serif'],
-          sans: ['"Hanken Grotesk"', 'system-ui', '-apple-system', 'Segoe UI', 'sans-serif']
-        }
-      }
-    }
-  }
-</script>
-<style>
-  /* ===== Colour tokens (light + dark) ===== */
-  :root {
-    --paper: 248 247 243;   /* off-white page */
-    --shell: 239 236 229;   /* soft panels */
-    --ink: 30 41 51;        /* dark slate text */
-    --slate2: 92 104 115;   /* secondary text */
-    --oat: 214 199 178;     /* warm neutral */
-    --walnut: 128 99 72;    /* warm accent */
-    --line: 225 220 211;
-    color-scheme: light;
-    box-sizing: border-box;
-    padding-top: env(safe-area-inset-top, 0px);
-    padding-bottom: env(safe-area-inset-bottom, 0px);
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
-      --paper: 23 27 31; --shell: 33 38 44; --ink: 236 233 226; --slate2: 166 172 178;
-      --oat: 120 104 86; --walnut: 214 186 152; --line: 52 58 65; color-scheme: dark;
-    }
-  }
-  :root[data-theme="dark"] {
-    --paper: 23 27 31; --shell: 33 38 44; --ink: 236 233 226; --slate2: 166 172 178;
-    --oat: 120 104 86; --walnut: 214 186 152; --line: 52 58 65; color-scheme: dark;
-  }
-  html { scroll-behavior: smooth; scroll-padding-top: env(safe-area-inset-top, 0px); }
-  body { background: rgb(var(--paper)); color: rgb(var(--ink)); }
-  *, *::before, *::after { box-sizing: inherit; }
-  img, video { max-width: 100%; }
-
-  /* Reel frame: 9:16 */
-  .reel { aspect-ratio: 9 / 16; }
-  .reel-fill {
-    background:
-      radial-gradient(120% 70% at 30% 20%, rgb(var(--oat) / .55), transparent 60%),
-      radial-gradient(90% 60% at 80% 90%, rgb(var(--walnut) / .25), transparent 70%),
-      rgb(var(--shell));
-  }
-
-  /* One orchestrated load moment: the hero */
-  .rise { opacity: 0; transform: translateY(14px); animation: rise .9s cubic-bezier(.2,.7,.2,1) forwards; }
-  .rise.d2 { animation-delay: .15s; } .rise.d3 { animation-delay: .3s; } .rise.d4 { animation-delay: .45s; }
-  @keyframes rise { to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) {
-    .rise { opacity: 1; transform: none; animation: none; }
-    html { scroll-behavior: auto; }
-  }
-  :focus-visible { outline: 2px solid rgb(var(--walnut)); outline-offset: 3px; border-radius: 6px; }
-  input, textarea { background: transparent; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UGC Portfolio | Mariah J Creates</title>
+  <meta name="description" content="UGC videos and lifestyle photos by Mariah, a former corporate marketer and boy mom.">
+  <meta property="og:title" content="UGC Portfolio | Mariah J Creates">
+  <meta property="og:description" content="UGC videos and lifestyle photos by Mariah, a former corporate marketer and boy mom.">
+  <meta property="og:image" content="https://mariahjcreates.com/images/mariah-full.jpg">
+  <link rel="icon" href="/images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="/assets/styles.css">
 </head>
-<body class="font-sans antialiased">
-
-<!-- ================= NAV ================= -->
-<header class="max-w-6xl mx-auto px-6 pt-6 flex items-center justify-between">
-  <a href="/" class="font-display text-3xl tracking-tight">MJ<span class="text-walnut">.</span></a>
-  <nav class="hidden sm:flex items-center gap-8 text-sm text-slate2">
-    <a href="#work" class="hover:text-ink">Work</a>
-    <a href="#results" class="hover:text-ink">Results</a>
-    <a href="#packages" class="hover:text-ink">Packages</a>
-    <a href="#contact" class="hover:text-ink">Contact</a>
-  </nav>
-  <a href="#contact" class="sm:hidden text-sm underline underline-offset-4">Contact</a>
-</header>
-
-<main id="top">
-
-<!-- ================= 1. HERO ================= -->
-<section class="max-w-6xl mx-auto px-6 pt-12 pb-20 md:pt-20 md:pb-28">
-  <div class="max-w-4xl">
-    <h1 class="rise font-display text-7xl sm:text-8xl lg:text-[9rem] leading-[.9] tracking-tight">Hi, I’m MJ.</h1>
-    <p class="rise d2 mt-5 text-base sm:text-lg text-walnut font-medium">Mariah Johnston, Canadian UGC creator for family, home &amp; everyday-routine brands</p>
-    <p class="rise d2 mt-10 font-display text-3xl sm:text-4xl leading-tight max-w-2xl">
-      Calm, real-home content that makes busy moms stop scrolling.
-    </p>
-    <p class="rise d3 mt-6 max-w-xl text-lg leading-relaxed text-slate2">
-      I’m a former corporate marketer turned at-home boy mom. I film your product the way moms actually use it: in a lived-in house, inside a real routine, with the strategy of someone who spent years on the brand side.
-    </p>
-    <div class="rise d4 mt-10 flex flex-wrap items-center gap-4">
-      <a data-email-link href="mailto:mariahjdigital@gmail.com?subject=UGC%20collab%20inquiry"
-         class="inline-flex items-center justify-center rounded-full bg-ink text-paper px-7 py-3.5 text-sm font-medium hover:opacity-90 transition">
-        Email me
-      </a>
-      <a href="#work" class="text-sm font-medium underline underline-offset-4 decoration-oat hover:decoration-walnut">See my work</a>
-    </div>
+<body data-page="portfolio" class="bg-cream text-ink font-sans min-h-screen flex flex-col">
+  <div aria-hidden="true" class="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-espresso-mist opacity-70 blur-3xl"></div>
+    <div class="absolute bottom-0 -left-24 w-80 h-80 rounded-full bg-linen opacity-80 blur-3xl"></div>
   </div>
-
-</section>
-
-<!-- ================= 2. VIDEO SHOWCASE ================= -->
-<section id="work" class="border-t border-line">
-  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
-    <div class="max-w-2xl">
-      <h2 class="font-display text-4xl sm:text-5xl tracking-tight">Recent work</h2>
-      <p class="mt-4 text-slate2 leading-relaxed">Product demos, routines and honest reviews, filmed in vertical 9:16 and ready to run as organic posts or paid ads.</p>
-      <a href="https://mariahjohnston.my.canva.site/createdbymj-portfolio" target="_blank" rel="noopener" class="mt-6 inline-block text-sm font-medium underline underline-offset-4 decoration-oat hover:decoration-walnut">View my full portfolio</a>
-    </div>
-
-    <!--
-      HOW TO ADD YOUR VIDEOS
-      Option A (simplest): each card links to your Canva portfolio; swap in a direct Reel link per card.
-                           Change the title and description text underneath.
-      Option B (when you host this site yourself, e.g. Netlify or Carrd):
-                           swap the <a ...>...</a> frame for:
-                           <video class="reel w-full rounded-2xl object-cover" src="your-video.mp4" poster="cover.jpg" controls playsinline muted></video>
-    -->
-    <div class="mt-14 grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-6 lg:gap-10">
-
-      <figure>
-        <a href="https://www.instagram.com/reel/De18kxwBR5x/" target="_blank" rel="noopener" aria-label="Watch: Boy mom" class="reel group relative block w-full max-w-sm mx-auto rounded-2xl reel-fill overflow-hidden">
-          <span class="absolute inset-0 grid place-items-center">
-            <span class="grid place-items-center h-16 w-16 rounded-full bg-paper/80 backdrop-blur group-hover:scale-105 transition"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-          </span>
-          <span class="absolute bottom-4 left-4 text-xs bg-paper/80 rounded-full px-3 py-1">Watch · 142K views</span>
-        </a>
-        <figcaption class="mt-5 max-w-sm mx-auto">
-          <p class="font-medium">Boy mom</p>
-          <p class="text-sm text-slate2 mt-1">142K views, 3,000+ likes and about 390 reposts, with no ad spend.</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="https://drive.google.com/file/d/1MLizYt_bujlgigfbV7fr5qOwYdPXXyDL/view" target="_blank" rel="noopener" aria-label="Watch: Genuine Tea" class="reel group relative block w-full max-w-sm mx-auto rounded-2xl reel-fill overflow-hidden">
-          <span class="absolute inset-0 grid place-items-center">
-            <span class="grid place-items-center h-16 w-16 rounded-full bg-paper/80 backdrop-blur group-hover:scale-105 transition"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-          </span>
-          <span class="absolute bottom-4 left-4 text-xs bg-paper/80 rounded-full px-3 py-1">Watch</span>
-        </a>
-        <figcaption class="mt-5 max-w-sm mx-auto">
-          <p class="font-medium">Genuine Tea</p>
-          <p class="text-sm text-slate2 mt-1">Brand collab: a Black Friday Reel for a Canadian tea brand.</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="https://www.instagram.com/reel/DfNXKmrBS1U/" target="_blank" rel="noopener" aria-label="Watch: Christmas at home" class="reel group relative block w-full max-w-sm mx-auto rounded-2xl reel-fill overflow-hidden">
-          <span class="absolute inset-0 grid place-items-center">
-            <span class="grid place-items-center h-16 w-16 rounded-full bg-paper/80 backdrop-blur group-hover:scale-105 transition"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-          </span>
-          <span class="absolute bottom-4 left-4 text-xs bg-paper/80 rounded-full px-3 py-1">Watch</span>
-        </a>
-        <figcaption class="mt-5 max-w-sm mx-auto">
-          <p class="font-medium">Christmas at home</p>
-          <p class="text-sm text-slate2 mt-1">Seasonal family content for the holidays.</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="https://www.instagram.com/reel/DduLi3Ih3qe/" target="_blank" rel="noopener" aria-label="Watch: Sweat and Shiver" class="reel group relative block w-full max-w-sm mx-auto rounded-2xl reel-fill overflow-hidden">
-          <span class="absolute inset-0 grid place-items-center">
-            <span class="grid place-items-center h-16 w-16 rounded-full bg-paper/80 backdrop-blur group-hover:scale-105 transition"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-          </span>
-          <span class="absolute bottom-4 left-4 text-xs bg-paper/80 rounded-full px-3 py-1">Watch</span>
-        </a>
-        <figcaption class="mt-5 max-w-sm mx-auto">
-          <p class="font-medium">Sweat and Shiver</p>
-          <p class="text-sm text-slate2 mt-1">Local collab showing their contrast therapy, hot and cold.</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="https://www.instagram.com/reel/DepgAPfhA8G/" target="_blank" rel="noopener" aria-label="Watch: Tips and tricks" class="reel group relative block w-full max-w-sm mx-auto rounded-2xl reel-fill overflow-hidden">
-          <span class="absolute inset-0 grid place-items-center">
-            <span class="grid place-items-center h-16 w-16 rounded-full bg-paper/80 backdrop-blur group-hover:scale-105 transition"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-          </span>
-          <span class="absolute bottom-4 left-4 text-xs bg-paper/80 rounded-full px-3 py-1">Watch</span>
-        </a>
-        <figcaption class="mt-5 max-w-sm mx-auto">
-          <p class="font-medium">Tips and tricks</p>
-          <p class="text-sm text-slate2 mt-1">Got a loud brain? Let AI hold the list and help you get organized.</p>
-        </figcaption>
-      </figure>
-      <figure>
-        <a href="https://www.instagram.com/reel/DdXDbb5huDN/" target="_blank" rel="noopener" aria-label="Watch: Confessions of a Type A mom" class="reel group relative block w-full max-w-sm mx-auto rounded-2xl reel-fill overflow-hidden">
-          <span class="absolute inset-0 grid place-items-center">
-            <span class="grid place-items-center h-16 w-16 rounded-full bg-paper/80 backdrop-blur group-hover:scale-105 transition"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></span>
-          </span>
-          <span class="absolute bottom-4 left-4 text-xs bg-paper/80 rounded-full px-3 py-1">Watch</span>
-        </a>
-        <figcaption class="mt-5 max-w-sm mx-auto">
-          <p class="font-medium">Confessions of a Type A mom</p>
-          <p class="text-sm text-slate2 mt-1">Day in the life: resetting a lived-in home, one calm step at a time.</p>
-        </figcaption>
-      </figure>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= 3. WHY UGC / STATS ================= -->
-<section id="results" class="bg-shell">
-  <div class="max-w-3xl mx-auto px-6 py-16 md:py-20 text-center">
-    <h2 class="font-display text-4xl sm:text-5xl tracking-tight">Built for results, not just pretty videos</h2>
-    <p class="mt-5 mx-auto max-w-xl text-slate2 leading-relaxed">My boy mom Reel has been watched more than 142,000 times, mostly by people who had never seen my page. That’s the same cold audience your ads need to win over.</p>
-
-    <div class="mt-10 grid grid-cols-3 divide-x divide-line rounded-2xl bg-paper border border-line">
-      <div class="px-3 py-6 sm:py-8">
-        <p class="font-display text-4xl sm:text-6xl leading-none">142K</p>
-        <p class="mt-3 text-xs sm:text-sm text-slate2">views</p>
+  <header id="site-header" class="relative"></header>
+  <main class="relative mx-auto w-full max-w-5xl px-5 py-10 fade">
+    <section class="grid md:grid-cols-[1fr_320px] gap-10 items-center">
+      <div>
+        <p class="text-xs uppercase tracking-[0.2em] text-espresso font-medium">UGC Portfolio</p>
+        <h1 id="headline" class="mt-3 font-serif text-4xl md:text-5xl font-semibold leading-tight"></h1>
+        <div id="intro" class="mt-5 text-muted leading-relaxed max-w-xl space-y-4"></div>
+        <div id="focus" class="mt-6 flex flex-wrap gap-2"></div>
+        <a href="/work-with-me" class="btn-primary mt-8 inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium">Let's work together <i class="fa-solid fa-arrow-right text-xs"></i></a>
       </div>
-      <div class="px-3 py-6 sm:py-8">
-        <p class="font-display text-4xl sm:text-6xl leading-none">3K+</p>
-        <p class="mt-3 text-xs sm:text-sm text-slate2">likes</p>
-      </div>
-      <div class="px-3 py-6 sm:py-8">
-        <p class="font-display text-4xl sm:text-6xl leading-none">390</p>
-        <p class="mt-3 text-xs sm:text-sm text-slate2">reposts</p>
-      </div>
-    </div>
-
-    <p class="mt-8 mx-auto max-w-xl text-slate2 leading-relaxed">No ad spend behind it, just a hook written to stop a cold audience. When moms send a video to other moms, that’s word-of-mouth your brand can put to work.</p>
-  </div>
-</section>
-
-<!-- ================= 4. SERVICES & PACKAGES ================= -->
-<section id="packages">
-  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
-    <div class="max-w-2xl">
-      <h2 class="font-display text-4xl sm:text-5xl tracking-tight">Packages</h2>
-      <p class="mt-4 text-slate2 leading-relaxed">Every package includes a creative brief review, hook options, raw files and one round of revisions. Gifted collaborations are considered case by case. All prices are in CAD.</p>
-    </div>
-
-    <div class="mt-14 grid md:grid-cols-3 gap-6 items-stretch">
-
-      <article class="flex flex-col rounded-2xl border border-line p-8">
-        <h3 class="font-display text-3xl">Single Reel</h3>
-        <p class="mt-2 text-sm text-slate2">For brands testing UGC for the first time.</p>
-        <p class="mt-8"><span class="text-sm text-slate2">Starting at</span> <span class="font-display text-5xl">$200</span> <span class="text-sm text-slate2">CAD per Reel</span></p>
-        <ul class="mt-8 space-y-3 text-sm leading-relaxed flex-1">
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>1 vertical Reel, 15–45 seconds</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>2 hook variations</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>Raw footage and captions</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>7-day turnaround</li>
-        </ul>
-        <a data-email-link data-subject="Single Reel" href="mailto:mariahjdigital@gmail.com" class="mt-10 text-center rounded-full border border-ink px-6 py-3 text-sm font-medium hover:bg-ink hover:text-paper transition">Book a Reel</a>
-      </article>
-
-      <article class="flex flex-col rounded-2xl bg-ink text-paper p-8">
-        <div class="flex items-start justify-between gap-4">
-          <h3 class="font-display text-3xl">Monthly Retainer</h3>
-          <span class="text-xs rounded-full bg-oat text-ink px-3 py-1 whitespace-nowrap">Best value</span>
-        </div>
-        <p class="mt-2 text-sm text-paper/70">A steady stream of fresh creative for ads that fatigue fast.</p>
-        <p class="mt-8"><span class="font-display text-5xl">$800</span> <span class="text-sm text-paper/70">CAD per month</span></p>
-        <ul class="mt-8 space-y-3 text-sm leading-relaxed flex-1">
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-oat shrink-0"></span>4 Reels per month</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-oat shrink-0"></span>Monthly hook and angle strategy call</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-oat shrink-0"></span>Lifestyle photos included</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-oat shrink-0"></span>Priority turnaround</li>
-        </ul>
-        <a data-email-link data-subject="Monthly Retainer" href="mailto:mariahjdigital@gmail.com" class="mt-10 text-center rounded-full bg-paper text-ink px-6 py-3 text-sm font-medium hover:opacity-90 transition">Start a retainer</a>
-      </article>
-
-      <article class="flex flex-col rounded-2xl border border-line p-8">
-        <h3 class="font-display text-3xl">Ads Whitelisting</h3>
-        <p class="mt-2 text-sm text-slate2">Run your ads from my account so they look native, not branded.</p>
-        <p class="mt-8"><span class="font-display text-5xl">$100</span> <span class="text-sm text-slate2">CAD per Reel, 30 days</span></p>
-        <ul class="mt-8 space-y-3 text-sm leading-relaxed flex-1">
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>Instagram and Facebook partnership ads</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>Authorization codes sent within 24 hours</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>Extensions available at 60 and 90 days</li>
-          <li class="flex gap-3"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-walnut shrink-0"></span>Add to any package</li>
-        </ul>
-        <a data-email-link data-subject="Ads Whitelisting" href="mailto:mariahjdigital@gmail.com" class="mt-10 text-center rounded-full border border-ink px-6 py-3 text-sm font-medium hover:bg-ink hover:text-paper transition">Ask about whitelisting</a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- ================= 5. CONTACT ================= -->
-<section id="contact" class="bg-shell">
-  <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid lg:grid-cols-12 gap-12">
-    <div class="lg:col-span-5">
-      <h2 class="font-display text-4xl sm:text-5xl tracking-tight">Let’s make something your customers believe.</h2>
-      <p class="mt-5 text-slate2 leading-relaxed">Tell me about your product and what you’d like it to do for you. I reply within one business day.</p>
-      <a data-email-link href="mailto:mariahjdigital@gmail.com" class="mt-8 inline-block font-display text-2xl underline underline-offset-8 decoration-oat hover:decoration-walnut break-all" data-email-text>mariahjdigital@gmail.com</a>
-    </div>
-
-    <form id="contactForm" class="lg:col-span-7 grid sm:grid-cols-2 gap-6" novalidate>
-      <label class="block">
-        <span class="text-sm text-slate2">Your name</span>
-        <input name="name" required class="mt-2 w-full border-b border-ink/30 py-3 focus:outline-none focus:border-walnut" autocomplete="name">
-      </label>
-      <label class="block">
-        <span class="text-sm text-slate2">Brand</span>
-        <input name="brand" class="mt-2 w-full border-b border-ink/30 py-3 focus:outline-none focus:border-walnut" autocomplete="organization">
-      </label>
-      <label class="block sm:col-span-2">
-        <span class="text-sm text-slate2">Email</span>
-        <input name="email" type="email" required class="mt-2 w-full border-b border-ink/30 py-3 focus:outline-none focus:border-walnut" autocomplete="email">
-      </label>
-      <label class="block sm:col-span-2">
-        <span class="text-sm text-slate2">Project details</span>
-        <textarea name="message" rows="4" required class="mt-2 w-full border-b border-ink/30 py-3 focus:outline-none focus:border-walnut resize-none"></textarea>
-      </label>
-      <div class="sm:col-span-2 flex flex-wrap items-center gap-4">
-        <button type="submit" class="rounded-full bg-ink text-paper px-7 py-3.5 text-sm font-medium hover:opacity-90 transition">Send inquiry</button>
-        <p id="formNote" class="text-sm text-slate2" role="status"></p>
-      </div>
-    </form>
-  </div>
-</section>
-
-</main>
-
-<!-- ================= FOOTER ================= -->
-<footer class="border-t border-line">
-  <div class="max-w-6xl mx-auto px-6 py-10 flex flex-col sm:flex-row gap-6 sm:items-center justify-between text-sm text-slate2">
-    <p>© 2026 Mariah Johnston, Created by MJ</p>
-    <div class="flex items-center gap-6">
-      <a href="https://www.instagram.com/_createdbymj/" target="_blank" rel="noopener" class="hover:text-ink inline-flex items-center gap-2">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-        Instagram
-      </a>
-    </div>
-  </div>
-</footer>
-
-<script>
-  /* ===== Change your email here once, and every button updates ===== */
-  const EMAIL = "mariahjdigital@gmail.com";
-
-  document.querySelectorAll("[data-email-link]").forEach(a => {
-    const subject = a.dataset.subject ? a.dataset.subject + " inquiry" : "UGC collab inquiry";
-    a.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject);
-  });
-  document.querySelectorAll("[data-email-text]").forEach(el => { el.textContent = EMAIL; });
-
-  const form = document.getElementById("contactForm");
-  const note = document.getElementById("formNote");
-  form.addEventListener("submit", e => {
-    e.preventDefault();
-    const d = new FormData(form);
-    if (!d.get("name") || !d.get("email") || !d.get("message")) {
-      note.textContent = "Add your name, email and project details to send.";
-      return;
-    }
-    const subject = "UGC inquiry from " + d.get("name") + (d.get("brand") ? " (" + d.get("brand") + ")" : "");
-    const body = d.get("message") + "\n\n" + d.get("name") + "\n" + (d.get("brand") || "") + "\n" + d.get("email");
-    window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-    note.textContent = "Opening your email app with your message ready to send.";
-  });
-</script>
+      <img src="/images/mariah-full.jpg" alt="Mariah" class="w-full aspect-[4/5] object-cover rounded-3xl">
+    </section>
+    <section id="brands-wrap" hidden class="mt-16 rounded-3xl border border-sand bg-white/50 px-6 py-8 text-center">
+      <p class="text-xs uppercase tracking-[0.2em] text-muted font-medium">Brands I've created for</p>
+      <div id="brands" class="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2"></div>
+    </section>
+    <h2 class="mt-20 font-serif text-3xl font-semibold">What I create</h2>
+    <section id="services" class="mt-6 grid md:grid-cols-3 gap-5"></section>
+    <h2 class="mt-20 font-serif text-3xl font-semibold">Recent brand work</h2>
+    <section id="projects" class="mt-6 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></section>
+  </main>
+  <footer id="site-footer" class="mt-auto border-t border-sand/70"></footer>
+  <script src="/assets/site.js"></script>
 </body>
 </html>

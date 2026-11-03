@@ -1,0 +1,131 @@
+# Pages CMS settings: this turns the site's content files into simple forms.
+# Edit your site at https://app.pagescms.org
+
+media:
+  input: images
+  output: /images
+
+content:
+  - name: site
+    label: Profile & socials
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - { name: name, label: Your name, type: string }
+      - { name: brand, label: Brand name, type: string }
+      - { name: handle, label: Instagram handle, type: string }
+      - { name: bio, label: Short bio, type: text }
+      - { name: tagline, label: Tagline, type: string }
+      - { name: photo, label: Profile photo, type: image }
+      - { name: email, label: Email, type: string }
+      - { name: instagram, label: Instagram link, type: string }
+      - { name: tiktok, label: TikTok link (leave blank to hide), type: string }
+      - { name: pinterest, label: Pinterest link (leave blank to hide), type: string }
+      - { name: youtube, label: YouTube link (leave blank to hide), type: string }
+
+  - name: links
+    label: Link-in-bio buttons
+    type: file
+    path: content/links.json
+    format: json
+    fields:
+      - name: buttons
+        label: Buttons (drag to reorder)
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Button text, type: string }
+          - { name: subtitle, label: Small text under it, type: string }
+          - { name: url, label: Link, type: string, description: "Your pages start with / (like /shop). Outside links start with https://" }
+          - { name: icon, label: Icon name, type: string, description: "A Font Awesome icon name, like leaf, gift, star, heart, video, bag-shopping" }
+          - { name: badge, label: Badge (optional), type: string, description: "Short word like Free or New" }
+          - { name: show, label: Show this button, type: boolean, default: true }
+
+  - name: portfolio
+    label: Portfolio
+    type: file
+    path: content/portfolio.json
+    format: json
+    fields:
+      - { name: headline, label: Headline, type: string }
+      - { name: intro, label: About me (leave a blank line between paragraphs), type: text }
+      - { name: focus, label: Areas of focus, type: string, list: true }
+      - { name: brands, label: Brands I've created for, type: string, list: true }
+      - name: services
+        label: What I create
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+      - name: projects
+        label: Brand work
+        type: object
+        list: true
+        fields:
+          - { name: brand, label: Brand, type: string }
+          - { name: type, label: Type (e.g. UGC Reel), type: string }
+          - { name: description, label: Description, type: text }
+          - { name: video, label: Video link, type: string, description: "Paste an Instagram, YouTube or Google Drive link (Drive file must be shared with Anyone with the link)" }
+          - { name: image, label: Cover photo, type: image }
+          - { name: link, label: Extra link (optional), type: string }
+          - { name: show, label: Show on site, type: boolean, default: true, description: "Brand work only appears once it has a video link or cover photo" }
+
+  - name: freebies
+    label: Freebies
+    type: file
+    path: content/freebies.json
+    format: json
+    fields:
+      - name: freebies
+        label: Freebies
+        type: object
+        list: true
+        fields:
+          - { name: id, label: Page address, type: string, description: "Lowercase with dashes, e.g. calm-week makes mariahjcreates.com/freebies/calm-week" }
+          - { name: title, label: Title, type: string }
+          - { name: subtitle, label: Subtitle, type: string }
+          - { name: description, label: Description, type: text }
+          - { name: bullets, label: What's inside, type: string, list: true }
+          - { name: image, label: Cover image, type: image }
+          - { name: download_url, label: Freebie file (PDF), type: file }
+          - { name: show, label: Show on site, type: boolean, default: true }
+
+  - name: shop
+    label: Shop
+    type: file
+    path: content/shop.json
+    format: json
+    fields:
+      - { name: intro, label: Intro & affiliate note, type: text }
+      - { name: shopmy_url, label: ShopMy link, type: string }
+      - name: items
+        label: Favorites
+        type: object
+        list: true
+        fields:
+          - { name: name, label: Product name, type: string }
+          - { name: category, label: Category, type: string }
+          - { name: note, label: Why I love it, type: string }
+          - { name: url, label: Affiliate link, type: string }
+          - { name: image, label: Photo, type: image }
+
+  - name: blog
+    label: Blog posts
+    type: file
+    path: content/blog.json
+    format: json
+    fields:
+      - name: posts
+        label: Posts
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: slug, label: Page address, type: string, description: "Lowercase with dashes, e.g. my-morning-routine" }
+          - { name: date, label: Date, type: date }
+          - { name: excerpt, label: Short summary, type: text }
+          - { name: image, label: Cover image, type: image }
+          - { name: body, label: Post, type: rich-text }
+          - { name: show, label: Published, type: boolean, default: true }

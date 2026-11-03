@@ -1,0 +1,91 @@
+{
+  "headline": "Real Life. Real Content. Real Results.",
+  "intro": "I'm a lifestyle UGC creator and mom of two boys, with 12+ years of content creation experience. I blend relatable, real-life storytelling with polished, strategic content that brands can use organically or across paid platforms.\n\nI love bringing my own creative eye to a project, but I'm just as comfortable following a direct brief, script or shot list. I'm known for being flexible, easy to work with and quick on turnaround, while always keeping the content natural, elevated and true to the brand.",
+  "focus": [
+    "Home",
+    "Wellness",
+    "Fitness",
+    "Organization",
+    "Family lifestyle",
+    "Everyday products"
+  ],
+  "brands": [
+    "Sky Zone",
+    "Chilly Moose",
+    "Genuine Tea",
+    "Nitevest",
+    "Bello",
+    "Sweat & Shiver",
+    "NHTC"
+  ],
+  "services": [
+    {
+      "title": "UGC Videos",
+      "description": "Short-form videos for ads and organic content: hooks, voiceovers, talking to camera and real-life B-roll."
+    },
+    {
+      "title": "How-To & Demos",
+      "description": "Clear, natural product demos that show exactly how something fits into everyday family life."
+    },
+    {
+      "title": "Family Collabs",
+      "description": "Real moments with my two boys at home and out in the community, for family-friendly brands and local businesses."
+    }
+  ],
+  "projects": [
+    {
+      "brand": "Chilly Moose",
+      "type": "Day-in-the-life UGC",
+      "description": "A real 6 a.m. hockey practice morning: getting my son and me to the rink with a warm drink in hand, showing the product in everyday use.",
+      "video": "https://drive.google.com/file/d/1GcpgwVrFCra5QoW-v9caEaZaIa1c4rJh/view",
+      "image": "",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Genuine Tea",
+      "type": "Promotional UGC",
+      "description": "A Black Friday and Cyber Monday promo built around small, everyday moments when a cup of tea gives you a chance to pause and slow down.",
+      "video": "https://drive.google.com/file/d/1MLizYt_bujlgigfbV7fr5qOwYdPXXyDL/view",
+      "image": "",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Nitevest",
+      "type": "Product UGC",
+      "description": "Product content filmed in real, everyday family life.",
+      "video": "https://www.instagram.com/p/Dd99YHXhssi/",
+      "image": "",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Sweat & Shiver",
+      "type": "On-location UGC",
+      "description": "Talking-to-camera content filmed on location at a contrast therapy studio.",
+      "video": "https://www.instagram.com/reel/DduLi3Ih3qe/",
+      "image": "",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Bello",
+      "type": "How-to UGC",
+      "description": "A simple, step-by-step demo showing the product in use at home.",
+      "video": "https://drive.google.com/file/d/1_s70DVkdex2botmUWQ2NU97ed7Ink1l2/view",
+      "image": "",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "NHTC",
+      "type": "Family collab",
+      "description": "Hockey-mom content from a real session at NHTC Academy, made for parents of young players.",
+      "video": "https://www.instagram.com/p/DcfLrLOhRes/",
+      "image": "",
+      "link": "",
+      "show": true
+    }
+  ]
+}
