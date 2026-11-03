@@ -1,0 +1,9 @@
+{
+  "intro": "The things that make our days a little calmer: home, mom life and everyday favorites. Some links are affiliate links, which means I may earn a small commission at no extra cost to you.",
+  "shopmy_url": "",
+  "items": [
+    { "name": "Placeholder favorite", "category": "Home", "note": "Why I love it, in one sentence.", "url": "", "image": "" },
+    { "name": "Placeholder favorite", "category": "Mom life", "note": "Why I love it, in one sentence.", "url": "", "image": "" },
+    { "name": "Placeholder favorite", "category": "Everyday", "note": "Why I love it, in one sentence.", "url": "", "image": "" }
+  ]
+}

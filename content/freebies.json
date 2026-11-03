@@ -1,0 +1,24 @@
+{
+  "freebies": [
+    {
+      "id": "calm-week",
+      "title": "The Calm-Week Starter",
+      "subtitle": "Simple, repeatable routines for a calmer home",
+      "description": "A gentle reset for busy moms: easy routines that keep the house running so you have room for what matters.",
+      "bullets": ["A simple weekly reset rhythm", "Morning and evening routine checklists", "A printable calm-week planner"],
+      "image": "",
+      "download_url": "",
+      "show": true
+    },
+    {
+      "id": "ugc-starter",
+      "title": "UGC Starter Kit",
+      "subtitle": "Start your UGC journey from home",
+      "description": "Everything I wish I had when I started UGC: what it is, how to get your first brand collab, and how to fit it into family life.",
+      "bullets": ["What UGC is and how creators get paid", "A simple portfolio checklist", "Pitch email template for your first brands"],
+      "image": "",
+      "download_url": "",
+      "show": true
+    }
+  ]
+}

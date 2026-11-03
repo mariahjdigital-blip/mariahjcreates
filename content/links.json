@@ -1,0 +1,10 @@
+{
+  "buttons": [
+    { "title": "UGC Portfolio", "subtitle": "Brand work, Reels & lifestyle photos", "url": "/portfolio", "icon": "camera-retro", "badge": "", "show": true },
+    { "title": "The Calm-Week Starter", "subtitle": "Simple routines for a calmer home", "url": "/freebies/calm-week", "icon": "leaf", "badge": "Free", "show": true },
+    { "title": "UGC Starter Kit", "subtitle": "Start your UGC journey from home", "url": "/freebies/ugc-starter", "icon": "seedling", "badge": "Free", "show": true },
+    { "title": "Shop My Favorites", "subtitle": "Home, mom & everyday finds", "url": "/shop", "icon": "bag-shopping", "badge": "", "show": true },
+    { "title": "The Blog", "subtitle": "Routines, UGC tips & real-life notes", "url": "/blog", "icon": "pen-nib", "badge": "", "show": true },
+    { "title": "Work With Me", "subtitle": "Brands: let's create something together", "url": "/work-with-me", "icon": "handshake", "badge": "", "show": true }
+  ]
+}
