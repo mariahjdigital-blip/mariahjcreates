@@ -106,6 +106,23 @@ const pages = {
         <h3 class="font-serif text-2xl font-semibold">${esc(s.title)}</h3>
         <p class="mt-2 text-sm text-muted leading-relaxed">${esc(s.description)}</p>
       </div>`).join('');
+    const h = p.highlight || {};
+    if (h.show !== false && (h.video || h.image)) {
+      $('#highlight-wrap').hidden = false;
+      $('#highlight').innerHTML = `
+        <div class="w-full max-w-[300px] mx-auto md:mx-0 shrink-0 aspect-[9/16] rounded-2xl overflow-hidden bg-linen">${media(h)}</div>
+        <div class="flex-1">
+          <p class="text-xs uppercase tracking-[0.2em] text-espresso font-medium">${esc(h.label || 'Organic results')}</p>
+          <h3 class="mt-2 font-serif text-3xl md:text-4xl font-semibold leading-tight">${esc(h.title)}</h3>
+          <p class="mt-3 text-muted leading-relaxed">${esc(h.description)}</p>
+          <div class="mt-6 grid grid-cols-2 gap-3">${(h.stats || []).filter(st => st && st.value).map(st => `
+            <div class="rounded-2xl bg-espresso-mist px-4 py-4">
+              <p class="font-serif text-3xl font-semibold text-espresso-dark">${esc(st.value)}</p>
+              <p class="text-xs uppercase tracking-widest text-muted mt-1">${esc(st.label)}</p>
+            </div>`).join('')}
+          </div>
+        </div>`;
+    }
     // Only show brand work that has a video or photo, so placeholders stay hidden
     const projects = (p.projects || []).filter(pr => pr && pr.show !== false && (pr.video || pr.image));
     $('#projects').innerHTML = projects.map(pr => `
@@ -245,7 +262,7 @@ function media(pr) {
   if (gd) return `<iframe src="https://drive.google.com/file/d/${gd[1]}/preview" title="${esc(pr.brand)}" class="w-full h-full" allow="autoplay" allowfullscreen loading="lazy"></iframe>`;
   const yt = v.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w-]{11})/);
   if (yt) return `<iframe src="https://www.youtube.com/embed/${yt[1]}" title="${esc(pr.brand)}" class="w-full h-full" allowfullscreen loading="lazy"></iframe>`;
-  if (/\.(mp4|mov|webm)(\?|$)/i.test(v)) return `<video src="${esc(v)}" ${pr.image ? `poster="${esc(pr.image)}"` : ''} controls playsinline preload="metadata" class="w-full h-full object-cover"></video>`;
+  if (/\.(mp4|mov|webm)(\?|$)/i.test(v)) return `<video src="${esc(v)}" ${pr.image ? `poster="${esc(pr.image)}" preload="none"` : 'preload="metadata"'} controls playsinline class="w-full h-full object-cover bg-black"></video>`;
   if (pr.image) return `<img src="${esc(pr.image)}" alt="${esc(pr.brand)}" class="w-full h-full object-cover" loading="lazy">`;
   return `<div class="text-center text-espresso-soft"><i class="fa-solid fa-clapperboard text-4xl"></i><p class="mt-3 text-xs uppercase tracking-widest">Video coming soon</p></div>`;
 }

@@ -8,6 +8,7 @@
     --font-serif: "Cormorant Garamond",Georgia,serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xs: 20rem;
@@ -382,6 +383,9 @@
   .max-w-5xl {
     max-width: var(--container-5xl);
   }
+  .max-w-\[300px\] {
+    max-width: 300px;
+  }
   .max-w-md {
     max-width: var(--container-md);
   }
@@ -439,6 +443,9 @@
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
+  .gap-8 {
+    gap: calc(var(--spacing) * 8);
+  }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
@@ -489,6 +496,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       border-color: color-mix(in oklab, var(--color-sand) 70%, transparent);
     }
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-cream {
     background-color: var(--color-cream);
@@ -767,6 +777,9 @@
     }
   }
   @media (width >= 48rem) {
+    .md\:mx-0 {
+      margin-inline: 0px;
+    }
     .md\:flex {
       display: flex;
     }
@@ -782,9 +795,22 @@
     .md\:grid-cols-\[1fr_320px\] {
       grid-template-columns: 1fr 320px;
     }
+    .md\:flex-row {
+      flex-direction: row;
+    }
+    .md\:items-center {
+      align-items: center;
+    }
+    .md\:p-8 {
+      padding: calc(var(--spacing) * 8);
+    }
     .md\:text-2xl {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+    .md\:text-4xl {
+      font-size: var(--text-4xl);
+      line-height: var(--tw-leading, var(--text-4xl--line-height));
     }
     .md\:text-5xl {
       font-size: var(--text-5xl);

@@ -37,8 +37,8 @@
       "brand": "Chilly Moose",
       "type": "Day-in-the-life UGC",
       "description": "A real 6 a.m. hockey practice morning: getting my son and me to the rink with a warm drink in hand, showing the product in everyday use.",
-      "video": "https://drive.google.com/file/d/1GcpgwVrFCra5QoW-v9caEaZaIa1c4rJh/view",
-      "image": "",
+      "video": "/videos/chilly-moose.mp4",
+      "image": "/images/posters/chilly-moose.jpg",
       "link": "",
       "show": true
     },
@@ -46,17 +46,17 @@
       "brand": "Genuine Tea",
       "type": "Promotional UGC",
       "description": "A Black Friday and Cyber Monday promo built around small, everyday moments when a cup of tea gives you a chance to pause and slow down.",
-      "video": "https://drive.google.com/file/d/1MLizYt_bujlgigfbV7fr5qOwYdPXXyDL/view",
-      "image": "",
+      "video": "/videos/genuine-tea.mp4",
+      "image": "/images/posters/genuine-tea.jpg",
       "link": "",
       "show": true
     },
     {
       "brand": "Nitevest",
       "type": "Product UGC",
-      "description": "Product content filmed in real, everyday family life.",
-      "video": "https://www.instagram.com/p/Dd99YHXhssi/",
-      "image": "",
+      "description": "A scroll-stopping, funny hook for a light-up dog vest, showing it in use at home with our dog.",
+      "video": "/videos/nitevest.mp4",
+      "image": "/images/posters/nitevest.jpg",
       "link": "",
       "show": true
     },
@@ -64,8 +64,17 @@
       "brand": "Sweat & Shiver",
       "type": "On-location UGC",
       "description": "Talking-to-camera content filmed on location at a contrast therapy studio.",
-      "video": "https://www.instagram.com/reel/DduLi3Ih3qe/",
-      "image": "",
+      "video": "/videos/sweat-and-shiver.mp4",
+      "image": "/images/posters/sweat-and-shiver.jpg",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Bello",
+      "type": "How-to UGC",
+      "description": "A clean how-to demo of the Bello water system: setup, filling and everyday use in a real kitchen.",
+      "video": "/videos/bello.mp4",
+      "image": "/images/posters/bello.jpg",
       "link": "",
       "show": true
     },
@@ -73,10 +82,36 @@
       "brand": "NHTC",
       "type": "Family collab",
       "description": "Hockey-mom content from a real session at NHTC Academy, made for parents of young players.",
-      "video": "https://www.instagram.com/p/DcfLrLOhRes/",
-      "image": "",
+      "video": "/videos/nhtc.mp4",
+      "image": "/images/posters/nhtc.jpg",
       "link": "",
       "show": true
     }
-  ]
+  ],
+  "highlight": {
+    "label": "Organic results",
+    "title": "My boy-mom Reel",
+    "description": "An original Reel on @_createdbymj. Relatable, real-life storytelling is what I bring to every brand video too.",
+    "video": "/videos/boy-mom-reel.mp4",
+    "image": "/images/posters/boy-mom-reel.jpg",
+    "stats": [
+      {
+        "label": "Views",
+        "value": "213K"
+      },
+      {
+        "label": "Shares",
+        "value": "7.6K"
+      },
+      {
+        "label": "Likes",
+        "value": "4.7K"
+      },
+      {
+        "label": "Saves",
+        "value": "582"
+      }
+    ],
+    "show": true
+  }
 }
