@@ -10,6 +10,9 @@
     "Everyday products"
   ],
   "brands": [
+    "Wellness Monster",
+    "Also Green",
+    "Vessi",
     "Sky Zone",
     "Chilly Moose",
     "Genuine Tea",
@@ -33,6 +36,51 @@
     }
   ],
   "projects": [
+    {
+      "brand": "Vessi",
+      "type": "Real-world product test",
+      "description": "“My dog made me cross the creek in white shoes.” A funny, unscripted performance test in an actual creek on a rainy BC dog walk.",
+      "video": "/videos/vessi-creek-walk.mp4",
+      "image": "/images/posters/vessi-creek-walk.jpg",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Also Green",
+      "type": "Product demo + honest reaction",
+      "description": "Solving the hockey bag stench on my son’s actual gear, with my real, unstaged reaction to how well it worked.",
+      "video": "/videos/also-green.mp4",
+      "image": "/images/posters/also-green.jpg",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Wellness Monster",
+      "type": "Lifestyle UGC",
+      "description": "The “healthy” snack that doesn’t come back home: an empty lunchbox with only the wrapper returning. Every mom’s dream, especially with picky eaters.",
+      "video": "/videos/wellness-monster.mp4",
+      "image": "/images/posters/wellness-monster.jpg",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Vessi",
+      "type": "Hockey-mom UGC",
+      "description": "A hockey mom rink checklist: the walk from car to rink with dry feet, even in slush and the worst conditions.",
+      "video": "/videos/vessi-rink-checklist.mp4",
+      "image": "/images/posters/vessi-rink-checklist.jpg",
+      "link": "",
+      "show": true
+    },
+    {
+      "brand": "Holiday Gift Guide",
+      "type": "Talking-head UGC",
+      "description": "Gifts my boys actually play with. Talking to camera about the products my family uses every day.",
+      "video": "/videos/holiday-gift-guide.mp4",
+      "image": "/images/posters/holiday-gift-guide.jpg",
+      "link": "",
+      "show": true
+    },
     {
       "brand": "Chilly Moose",
       "type": "Day-in-the-life UGC",
@@ -91,25 +139,25 @@
   "highlight": {
     "label": "Organic results",
     "title": "My boy-mom Reel",
-    "description": "An original Reel on @_createdbymj. Relatable, real-life storytelling is what I bring to every brand video too.",
-    "video": "/videos/boy-mom-reel.mp4",
-    "image": "/images/posters/boy-mom-reel.jpg",
+    "description": "An original text-on-screen Reel on @_createdbymj: relatable boy-mom storytelling that reached more than 2.3 million views. Another boy-mom Reel hit 335K views and 11.6K shares. That same real-life storytelling is what I bring to every brand video.",
+    "video": "/videos/boy-mom-viral.mp4",
+    "image": "/images/posters/boy-mom-viral.jpg",
     "stats": [
       {
         "label": "Views",
-        "value": "213K"
-      },
-      {
-        "label": "Shares",
-        "value": "7.6K"
+        "value": "2.3M"
       },
       {
         "label": "Likes",
-        "value": "4.7K"
+        "value": "24.6K"
       },
       {
-        "label": "Saves",
-        "value": "582"
+        "label": "Shares",
+        "value": "5.3K"
+      },
+      {
+        "label": "Reposts",
+        "value": "597"
       }
     ],
     "show": true
