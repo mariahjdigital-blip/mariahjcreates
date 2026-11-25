@@ -13,7 +13,7 @@ const fmtDate = (d) => d ? new Date(d + 'T12:00:00').toLocaleDateString('en-US',
 const NAV = [
   ['Portfolio', '/portfolio'],
   ['Freebies', '/freebies'],
-  ['Shop', '/shop'],
+  // ['Shop', '/shop'],  hidden until the Hockey Mom Kit launches; remove the // to bring it back
   ['Blog', '/blog'],
   ['Work With Me', '/work-with-me']
 ];
